@@ -20,11 +20,10 @@
 - 
 
 **CIA mapping:**
-- incident_a: Confidentiality - Lộ điểm sinh viên cho người không có quyền
+- Sự cố A → Confidentiality (lộ điểm sinh viên cho người không có quyền)
+- Sự cố B → Integrity (điểm bị sửa trái phép)
+- Sự cố C → Availability (hệ thống bị sập, không truy cập được)
 
-- incident_b: Integrity - Điểm bị sửa trái phép
-
-- incident_c: Availability - Hệ thống bị sập, không truy cập được
 **Phân tích sự cố B:**
 - Threat: Hacker hoặc sinh viên truy cập trái phép để thay đổi điểm.
 - Vulnerability: Mật khẩu yếu hoặc bị lộ; không có phân quyền rõ ràng; thiếu cơ chế ghi log
