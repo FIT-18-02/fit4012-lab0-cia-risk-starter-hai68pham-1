@@ -20,13 +20,15 @@
 - 
 
 **CIA mapping:**
-- Sự cố A -> Confidentiality (lộ điểm sinh viên cho người không có quyền)
-- Sự cố B -> Integrity (điểm bị sửa trái phép)
-- Sự cố C -> Availability (hệ thống bị sập, không truy cập được)
+- incident_a: Confidentiality - Lộ điểm sinh viên cho người không có quyền
+
+- incident_b: Integrity - Điểm bị sửa trái phép
+
+- incident_c: Availability - Hệ thống bị sập, không truy cập được
 **Phân tích sự cố B:**
 - Threat: Hacker hoặc sinh viên truy cập trái phép để thay đổi điểm.
-- Vulnerability:Mật khẩu yếu hoặc bị lộ; không có phân quyền rõ ràng; thiếu cơ chế ghi log
-- Mitigation:Sử dụng xác thực mạnh (mật khẩu + OTP); phân quyền rõ ràng; ghi log và kiểm tra lịch sử
+- Vulnerability: Mật khẩu yếu hoặc bị lộ; không có phân quyền rõ ràng; thiếu cơ chế ghi log
+- Mitigation: Sử dụng xác thực mạnh (mật khẩu + OTP); phân quyền rõ ràng; ghi log và kiểm tra lịch sử
 
 ### 4. Kết luận ngắn
 Qua bài lab này, em hiểu rõ hơn về mô hình CIA và cách áp dụng vào hệ thống thực tế. Em nhận ra rằng mỗi sự cố đều có thể liên quan đến nhiều yếu tố bảo mật. Phần khó nhất là xác định các vulnerability ẩn trong hệ thống. Khi phân tích an toàn thông tin, cần xem xét toàn bộ chu kỳ sống của dữ liệu và tất cả các điểm tiếp xúc có thể bị tấn công.
