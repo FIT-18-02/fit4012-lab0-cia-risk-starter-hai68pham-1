@@ -15,18 +15,27 @@
 
 ### 3. Kết quả chính
 **Assets:**
-- 
+- Student grade database
+- Login credentials
 - 
 
 **CIA mapping:**
-- Sự cố A -> 
-- Sự cố B -> 
-- Sự cố C -> 
+- Sự cố A → Confidentiality (lộ điểm sinh viên cho người không có quyền)
+-Sự cố B → Integrity (điểm bị sửa trái phép)
+-Sự cố C → Availability (hệ thống bị sập, không truy cập được)
 
 **Phân tích sự cố B:**
-- Threat: 
-- Vulnerability: 
-- Mitigation: 
+- Threat: Hacker hoặc sinh viên truy cập trái phép để thay đổi điểm.
+- Vulnerability:
+ Mật khẩu yếu hoặc bị lộ
+ Không có phân quyền rõ ràng
+ Thiếu cơ chế kiểm tra/ghi log thay đổi
+- Mitigation:
+  Sử dụng xác thực mạnh (mật khẩu + OTP)
+  Phân quyền rõ ràng (chỉ giảng viên được sửa điểm)
+  Ghi log và kiểm tra lịch sử chỉnh sửa
+  Mã hóa dữ liệu quan trọng
 
 ### 4. Kết luận ngắn
 (4-6 dòng: em học được gì từ bài lab này, phần nào khó nhất, điều gì cần chú ý khi phân tích một sự cố an toàn thông tin.)
+Qua bài lab này, em hiểu rõ hơn về mô hình CIA và cách áp dụng vào hệ thống thực tế. Em nhận ra rằng mỗi sự cố đều có thể liên quan đến nhiều yếu tố bảo mật khác nhau. Phần khó nhất là phân biệt rõ threat và vulnerability vì chúng dễ bị nhầm lẫn. Khi phân tích an toàn thông tin, cần xác định đúng tài sản và suy nghĩ theo góc nhìn của kẻ tấn công để đưa ra biện pháp phù hợp.
